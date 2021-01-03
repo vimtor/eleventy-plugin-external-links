@@ -1,0 +1,29 @@
+{
+  "name": "eleventy-plugin-external-links",
+  "version": "1.0.0",
+  "description": "Eleventy plugin to make all external links open securely in a new tab",
+  "main": "index.js",
+  "license": "MIT",
+  "homepage": "https://github.com/vimtor/eleventy-plugin-external-links#readme",
+  "author": {
+    "name": "Victor Navarro",
+    "email": "victor@vimtor.io",
+    "url": "https://vimtor.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vimtor/eleventy-plugin-external-links.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vimtor/eleventy-plugin-external-links/issues"
+  },
+  "keywords": [
+    "eleventy",
+    "11ty",
+    "plugin",
+    "links"
+  ],
+  "dependencies": {
+    "node-html-parser": "^2.0.1"
+  }
+}
