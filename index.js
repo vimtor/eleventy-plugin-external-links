@@ -8,6 +8,7 @@ module.exports = (eleventyConfig, userOptions = {}) => {
         target: "_blank",
         rel: "noopener",
         extensions: [".html"],
+        includeDoctype: true,
         ...userOptions
     }
 
@@ -22,7 +23,8 @@ module.exports = (eleventyConfig, userOptions = {}) => {
                     link.setAttribute("rel", options.rel);
                 }
             });
-            return `<!DOCTYPE html>${root.toString()}`;
+            let newContent = includeDoctype ? `<!DOCTYPE html>${root.toString()}` : root.toString();
+            return newContent;
         }
 
         return content;
