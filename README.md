@@ -4,7 +4,6 @@ Eleventy plugin to make all external links open securely in a new tab
 
 ```shell script
 npm install -D eleventy-plugin-external-links
-yarn install -D eleventy-plugin-external-links
 ```
 
 Then simply add it to you eleventy config
