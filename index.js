@@ -23,10 +23,9 @@ module.exports = (eleventyConfig, userOptions = {}) => {
                     link.setAttribute("rel", options.rel);
                 }
             });
-            let newContent = includeDoctype ? `<!DOCTYPE html>${root.toString()}` : root.toString();
-            return newContent;
+            const content = root.toString();
+            return options.includeDoctype ? `<!DOCTYPE html>${content}` : content;
         }
-
         return content;
     })
 }
