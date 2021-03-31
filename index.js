@@ -23,8 +23,8 @@ module.exports = (eleventyConfig, userOptions = {}) => {
                     link.setAttribute("rel", options.rel);
                 }
             });
-            const content = root.toString();
-            return options.includeDoctype ? `<!DOCTYPE html>${content}` : content;
+            const newContent = root.toString();
+            return options.includeDoctype ? `<!DOCTYPE html>${newContent}` : newContent;
         }
         return content;
     })
